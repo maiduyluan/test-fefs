@@ -1,6 +1,6 @@
 'use client';
 
-import { Image, Input, Link, useDisclosure } from '@chakra-ui/react';
+import { Image, Link } from '@chakra-ui/react';
 import React, { FC, useMemo, useRef, useState } from 'react';
 import { PiCaretDown } from 'react-icons/pi';
 import { Button } from '@chakra-ui/react';

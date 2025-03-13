@@ -19,10 +19,10 @@ const BlogDetailFeature: FC<BlogDetailFeatureProps> = ({ blogId }) => {
   const [isDropdownContentSection, setIsDropDownContentSection] =
     useState(false);
 
-  const postDetailData = useMemo(
-    () => postData.find((item) => item.id === blogId),
-    [blogId]
-  );
+  // const postDetailData = useMemo(
+  //   () => postData.find((item) => item.id === blogId),
+  //   [blogId]
+  // );
 
   const handleDropdownContentSection = () => {
     setIsDropDownContentSection(!isDropdownContentSection);

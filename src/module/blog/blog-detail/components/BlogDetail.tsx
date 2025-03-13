@@ -1,11 +1,5 @@
 import { Image, Text } from '@chakra-ui/react';
-import {
-  List,
-  ListItem,
-  ListIcon,
-  OrderedList,
-  UnorderedList,
-} from '@chakra-ui/react';
+import { ListItem, UnorderedList } from '@chakra-ui/react';
 
 const BlogDetail = () => {
   return (
