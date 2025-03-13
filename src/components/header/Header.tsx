@@ -5,26 +5,8 @@ import React, { FC, useMemo, useRef, useState } from 'react';
 import { PiCaretDown } from 'react-icons/pi';
 import { Button } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
-import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-} from '@chakra-ui/react';
 import { IoMenu } from 'react-icons/io5';
 import { MdClose } from 'react-icons/md';
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-} from '@chakra-ui/react';
 
 interface MenuItem {
   id: string;
