@@ -1,19 +1,12 @@
 'use client';
 
-import {
-  Button,
-  Image,
-  Input,
-  InputGroup,
-  InputRightElement,
-  Text,
-} from '@chakra-ui/react';
+import { Image, Input, Text } from '@chakra-ui/react';
 import Banner from './components/Banner';
 import Link from 'next/link';
 import PostCard from './components/PostCard';
 import { FiSearch } from 'react-icons/fi';
 import CategoryCard from './components/CategoryCard';
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import listBlogData from '@/utils/listBlogData';
 import categoryData from '@/utils/categoryData';
@@ -22,7 +15,7 @@ import { FaArrowLeft } from 'react-icons/fa6';
 import { FaArrowRight } from 'react-icons/fa6';
 
 const BlogFeature = () => {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
   const handlePageClick = (data: any) => {
     setPage(data.selected);
   };
@@ -108,7 +101,7 @@ const BlogFeature = () => {
           nextLabel={false}
           breakLabel={'...'}
           pageCount={10}
-          marginPagesDisplayed={1}
+          marginPagesDisplayed={page}
           pageRangeDisplayed={3}
           onPageChange={handlePageClick}
           containerClassName="flex space-x-2"

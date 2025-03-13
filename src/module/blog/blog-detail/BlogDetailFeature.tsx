@@ -1,6 +1,5 @@
 import { Text } from '@chakra-ui/react';
-import { FC, useMemo, useState } from 'react';
-import postData from '@/utils/listBlogData';
+import { FC, useState } from 'react';
 import listBlogData from '@/utils/listBlogData';
 import PostCard from '../components/PostCard';
 import RelatedSection from '../components/RelatedSection';
@@ -16,6 +15,7 @@ interface BlogDetailFeatureProps {
 }
 
 const BlogDetailFeature: FC<BlogDetailFeatureProps> = ({ blogId }) => {
+  console.log('🚀 ~ blogId:', blogId);
   const [isDropdownContentSection, setIsDropDownContentSection] =
     useState(false);
 
