@@ -138,7 +138,10 @@ const Header: FC = () => {
       {isOpenMenuMobie && (
         <div className="fixed top-0 right-0 w-[40%] h-full bg-white z-20">
           <div className="flex justify-end p-3 border-b border-[#F1F5F7]">
-            <MdClose className="text-[32px]" />
+            <MdClose
+              className="text-[32px] cursor-pointer"
+              onClick={handelOpenMenuMobile}
+            />
           </div>
           <div className="flex flex-col gap-4 text-[18px] p-3">
             {listMenu.map((m, i) => {
