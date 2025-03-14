@@ -64,7 +64,10 @@ const BlogFeature = () => {
           </Link>
           <div className="py-[16px] lg:py-[24px] xl:py-[48px] flex flex-wrap w-full gap-8">
             {listBlogData.map((post, i) => (
-              <div key={i} className="w-full md:w-[47%] lg:w-[47%] xl:w-[48%]">
+              <div
+                key={i}
+                className="w-full md:w-[47%] lg:w-[47%] xl:w-[48%] 2xl:w-[47%]"
+              >
                 <PostCard listBlogData={post} />
               </div>
             ))}

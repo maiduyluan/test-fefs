@@ -63,7 +63,7 @@ const Header: FC = () => {
   };
 
   return (
-    <div className="flex justify-between items-center px-[20px] xl:px-[70px] 2xl:px-[150px] py-3 shadow-lg lg:rounded-[40px]">
+    <div className="flex justify-between items-center px-[20px] xl:px-[70px] 2xl:px-[130px] py-3 shadow-lg lg:rounded-[40px]">
       <Link href="/">
         <Image
           src={'/images/FOSO_Logo_Final_1-1400x579.svg'}
